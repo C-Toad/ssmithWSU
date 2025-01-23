@@ -11,16 +11,16 @@
 
 | Windows | Linux / Mac | Action |
 | ---     | ---         | ---    |
-| help    | man         |        |
-| Get-Location | pwd    |        |
-| Get-ChildItem | ls    |        |
-| mkdir   | mkdir       |        |
-| Set-Location | cd     |        |
-| New-Item | touch      |        |
-| Move-Item | mv        |        |
-| Copy-Item | cp        |        |
-| Remove-Item | rm      |        |
-| notepad.exe | vim     |        |
+| help    | man         |provides ways to get help|
+| Get-Location | pwd    |shows the current directory       |
+| Get-ChildItem | ls    |Lists files and folders in a directory       |
+| mkdir   | mkdir       |creates directories        |
+| Set-Location | cd     |sets the current work to a specific location        |
+| New-Item | touch      |creates directories        |
+| Move-Item | mv        |moves files and folders        |
+| Copy-Item | cp        |copies files and folders        |
+| Remove-Item | rm      |deletes files and folders        |
+| notepad.exe | vim     |uses notepad        |
 
 ## Part 3 - Command Line Navigation
 
