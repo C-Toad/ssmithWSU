@@ -30,7 +30,7 @@ My OS is:
 - [] Mac
 
 My Command Line Shell is: 
-
+Windows Powershell
 ### Navigating My OS on the Command Line
 
 1. Create a directory named `DirA`:
