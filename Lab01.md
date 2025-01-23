@@ -16,7 +16,7 @@
 | Get-ChildItem | ls    |Lists files and folders in a directory       |
 | mkdir   | mkdir       |creates directories        |
 | Set-Location | cd     |sets the current work to a specific location        |
-| New-Item | touch      |creates directories        |
+| New-Item | touch      |creates files/folders        |
 | Move-Item | mv        |moves files and folders        |
 | Copy-Item | cp        |copies files and folders        |
 | Remove-Item | rm      |deletes files and folders        |
@@ -42,7 +42,21 @@ Windows Powershell
 7. Move the file named `test.txt` into `DirA`:
 8. Contents of `test.txt`:
 ```
-Put your words here
+1. mkdir DirA
+2. mkdir Dir_B
+3. cd DirA
+4. cd Dir_B
+5. cd ~
+6. New-Item or touch test.txt
+7. mv -Path test.txt -Destination C:\Users\Stephan\DirA
+8. notepad.exe or vim test.txt
+9. Copy-Item or cp -Path C:\Users\Stephan\DirA\test.txt -Destination 
+    C:\Users\Stephan\DirA\copy.txt
+10. ls DirA
+11. cp -Path C:\Users\Stephan\DirA\test.txt -Destination   
+    C:\Users\Stephan\DirA\Dir_B\fodder.txt
+12. rm DirA\Dir_B\fodder.txt 
+    rm DirA\Dir_B
 ```
 9. Make a copy of `test.txt` named `copy.txt` in `DirA`:
 10. View the contents of `DirA`: 
@@ -51,4 +65,4 @@ Put your words here
 
 ## Citations
 
-To add citations, provide the cite and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+Google searches/Google AI. Used to help me remember how to move and copy
