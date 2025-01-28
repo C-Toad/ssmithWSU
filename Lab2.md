@@ -1,38 +1,38 @@
 ## Lab 02
 
-- Name:
-- Email
+- Name: Stephan Smith 
+- Email: smith.3174@wright.edu
 
 ## Part 1 Answers
 
 Command to SSH to AWS instance:
 ```
-[Place your ssh command here]
+ssh -i C:\Users\Stephan\Documents\ceg2350.pem ubuntu@98.85.210.115
 ```
 
 ## Part 2 Answers
 
 1. `chmod u+r bubbles.txt`
-    - Means: 
+    - Means: Adds a permission to read for the user.
 2. `chmod u=rw,g-w,o-x banana.cabana`
-    - Means: 
+    - Means: allows the user to read and write,Removes write permission from the group and removes execute permission from others.
 3. `chmod a=w snow.md`
-    - Means: 
+    - Means: All users can write only.
 4. `chmod 751 program`
-    - Means: 
+    - Means: Users can read, write, execute, Group can read and execute and Others execute.
 5. `chmod -R ug+w share`
-    - Means: 
+    - Means: user and group can write in directory share
 
 ## Part 3 Answers
 
-1. Command to create new user: 
-2. Path to user's home directory: 
+1. Command to create new user: useradd
+2. Path to user's home directory: C:\home\usernameTheyHave
 3. Evaluate if `ubuntu` can add files to user's home directory:
-4. Command to switch to user:
-5. Command(s) to go to user's home directory:
-6. Evaluate if user can add files to user's home directory:
-7. Command to switch to `ubuntu`:
-8. Command to return to `ubuntu` home directory: 
+4. Command to switch to user: su
+5. Command(s) to go to user's home directory: cd
+6. Evaluate if user can add files to user's home directory: ls
+7. Command to switch to `ubuntu`: sudo su ubuntu
+8. Command to return to `ubuntu` home directory: cd ~ubuntu
 
 ## Part 4 Answers
 
