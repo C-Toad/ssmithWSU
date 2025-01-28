@@ -15,13 +15,13 @@ ssh -i C:\Users\Stephan\Documents\ceg2350.pem ubuntu@98.85.210.115
 1. `chmod u+r bubbles.txt`
     - Means: Adds a permission to read for the user.
 2. `chmod u=rw,g-w,o-x banana.cabana`
-    - Means: allows the user to read and write,Removes write permission from the group and removes execute permission from others.
+    - Means: allows the user to read and write, Removes write permission from the group and removes execute permission from others.
 3. `chmod a=w snow.md`
     - Means: All users can write only.
 4. `chmod 751 program`
-    - Means: Users can read, write, execute, Group can read and execute and Others execute.
+    - Means: Users can read, write, and execute, Group can read and execute and Others execute.
 5. `chmod -R ug+w share`
-    - Means: user and group can write in directory share
+    - Means: user and group can write in share directory 
 
 ## Part 3 Answers
 
@@ -30,7 +30,7 @@ ssh -i C:\Users\Stephan\Documents\ceg2350.pem ubuntu@98.85.210.115
 3. Evaluate if `ubuntu` can add files to user's home directory:
 4. Command to switch to user: su
 5. Command(s) to go to user's home directory: cd
-6. Evaluate if user can add files to user's home directory: ls
+6. Evaluate if user can add files to user's home directory: The user should have write permissions so they can add files to the home directory
 7. Command to switch to `ubuntu`: sudo su ubuntu
 8. Command to return to `ubuntu` home directory: cd ~ubuntu
 
