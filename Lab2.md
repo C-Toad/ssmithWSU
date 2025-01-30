@@ -38,23 +38,22 @@ ssh -i C:\Users\Stephan\Documents\ceg2350.pem ubuntu@98.85.210.115
 
 For each, write the command used or answer the question posed.
 
-1. Command to create group named `crew`:
-2. Command(s) to add `ubuntu` & user to group `crew`:
-3. Command to modify `share` to have group ownership of `crew`:
-4. Command to switch to user:
-5. Command to add file to `share`: 
-6. Evaluate why these steps allowed the above action:
+1. Command to create group named `crew`: sudo groupadd crew
+2. Command(s) to add `ubuntu` & user to group `crew`: sudo usermod -aG crew ubuntu and sudo usermod -aG crew user
+3. Command to modify `share` to have group ownership of `crew`: sudo chown :crew share
+4. Command to switch to user: su - ubuntu
+5. Command to add file to `share`: touch /path/to/share/filenamegoeshere
+6. Evaluate why these steps allowed the above action: Both are part of the crew group
 
 ## Part 5 Answers
 
 For each, write the command used or answer the question posed.
 
-1. Command to create file using `sudo`: 
-2. Evaluate (in plain text) the permission of the file: 
-3. Provide a method to edit the file without modifying permissions: 
-4. Command(s) to modify permissions:
+1. Command to create file using `sudo`: sudo touch /path/to/filenamehere
+2. Evaluate (in plain text) the permission of the file: Root has permission unless changed
+3. Provide a method to edit the file without modifying permissions: using sudo nano /path/to/filenamehere
+4. Command(s) to modify permissions: chmod o=rwx,g+rw,o+r /path/to/filenamehere
 
 ## Citations
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
-
+Chat GPT, asked it about some commands I forgot, like the touch command and also checked what the equivalent permission changes of 644 were for the last question
